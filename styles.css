@@ -1,0 +1,76 @@
+:root {
+  --orange: 26 100% 55%;
+  --pale-orange: 25 100% 94%;
+  --very-dark-blue: 220 13% 13%;
+  --dark-grayish-blue: 219 9% 45%;
+  --grayish-blue: 220 14% 75%;
+  --light-grayish-blue: 223 64% 98%;
+  --white: 0 0% 100%;
+  --black: 100 100% 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/* Start Navbar */
+header {
+  background-color: hsl(var(--white));
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  border-bottom: 2px solid rgb(227, 228, 233);
+}
+header div:first-child {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul a {
+  color: hsl(var(--dark-grayish-blue));
+}
+
+header img {
+  display: block;
+}
+
+header div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+header div:last-child :last-child {
+  width: 55px;
+}
+/* End Navbar */
